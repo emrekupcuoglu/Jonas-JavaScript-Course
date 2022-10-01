@@ -1,0 +1,26 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "start": "npx parcel index.html",
+    "build": " npx parcel build index.html"
+  },
+  "author": "Emre",
+  "license": "ISC",
+  "browserslist": "> 0.25%, not dead",
+  "dependencies": {
+    "core-js": "^3.24.1",
+    "leaflet": "^1.8.0",
+    "lodash-es": "^4.17.21",
+    "regenerator": "^0.14.7",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  }
+}
