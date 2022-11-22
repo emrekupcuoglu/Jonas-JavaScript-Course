@@ -6,8 +6,6 @@ console.log(64);
 let firstName = "Emre";
 console.log(firstName);
 
-
-
 console.log(typeof true);
 console.log(typeof 23);
 console.log(typeof "jonas");
@@ -57,14 +55,12 @@ console.log(x);
 x--;
 console.log(x);
 
-
-
-const emreNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`
+const emreNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 console.log(emreNew);
 
 console.log(`I'm just a regular string...`);
 
-console.log("I'm a string with \n\ multiple \n\ lines");
+console.log("I'm a string with \n multiple \n lines");
 
 console.log(`String 
 multiple
@@ -79,11 +75,11 @@ if (age >= 18) {
   console.log(`Sarah is too young wait another ${yearsLeft} years`);
 }
 
-// Truhty and Falsy Values
+// Truthy and Falsy Values
 
 // 0, undefined, "", Null, and NaN are falsy values rest of the values are truthy values
 
-// Truthy values are values that are not true at the time of declaration but are turned true imlicitly or expilicitly when required
+// Truthy values are values that are not true at the time of declaration but are turned true implicitly or explicitly when required
 // falsy values are the opposite
 
 console.log(Boolean(0));
@@ -96,7 +92,6 @@ const money = 100;
 
 if (money) {
   console.log("Don't spend it all");
-
 } else {
   console.log("Get a job!");
 }
@@ -108,12 +103,11 @@ if (height) {
   console.log("height is not defined");
 }
 
-
-// Comparision Operators
+// Comparison Operators
 
 // === is strict equal and == is loose equal
 // for strict equal to be true it needs to be exactly the same including the type
-// but loose equal does type coercion(imlicit type conversion) so 23 can be equal to "23"
+// but loose equal does type coercion(implicit type conversion) so 23 can be equal to "23"
 
 const favoriteNumber = "18";
 
@@ -124,15 +118,16 @@ if (favoriteNumber == 18) console.log("You just became an adult(loose)");
 const favorite = Number(prompt("what is your favorite number?"));
 console.log(favorite, typeof favorite);
 
-// the value type we get from promt is a string but == operator does type coercion so the line below works
-//for it to work with === operator we need to wrap the prompt in Number to manualy convert it from string to number type
+// the value type we get from prompt is a string but == operator does type coercion so the line below works
+//for it to work with === operator we need to wrap the prompt in Number to manually convert it from string to number type
 
 if (favorite == 23) console.log("cool 23 is an amazing number");
 
 if (favorite === 42) {
-  console.log("cool we wrapped promt in a number for it to work and 42 is great btw");
-}
-else if (favorite === 8) {
+  console.log(
+    "cool we wrapped promt in a number for it to work and 42 is great btw"
+  );
+} else if (favorite === 8) {
   console.log("8 is cool");
 } else {
   console.log("number is not 42 or 8");
@@ -143,25 +138,26 @@ else if (favorite === 8) {
 if (favorite !== 23) console.log("Why not 23?");
 
 // Logical Operators
-// && is the AND operator and || is the OR operator and ! is the NOT operator  
+// && is the AND operator and || is the OR operator and ! is the NOT operator
 
-const hasDriversLicence = true
+const hasDriversLicense = true;
 const hasGoodVision = true;
 
-console.log(hasDriversLicence && hasGoodVision);
-console.log(hasDriversLicence || hasGoodVision);
-console.log(!hasDriversLicence);
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
 
-const shouldDrive = hasDriversLicence && hasGoodVision;
+const shouldDrive = hasDriversLicense && hasGoodVision;
 
-if (hasDriversLicence && hasGoodVision) {
+if (hasDriversLicense && hasGoodVision) {
   console.log("Sarah is able to drive");
-} else { console.log("sarah should not drive"); }
+} else {
+  console.log("sarah should not drive");
+}
 
-const isTired = false
+const isTired = false;
 
-console.log(hasDriversLicence || hasGoodVision && isTired);
-
+console.log(hasDriversLicense || (hasGoodVision && isTired));
 
 const day = prompt("Which day's schedule you want to check?");
 
@@ -194,50 +190,47 @@ if (day === "monday") {
   console.log("Coding all day long!");
 } else if (day === "wednesday" || day === "thursday") {
   console.log("Write code examples");
-}
-else if (day === "friday") {
+} else if (day === "friday") {
   console.log("No rest for the wicked");
-
-}
-else if (day === "saturday" || day === "sunday") {
+} else if (day === "saturday" || day === "sunday") {
   console.log("Harder Faster Better Stronger");
 } else {
   console.log("Not a valid date");
 }
 
 // Difference Between Expressions and Statements:
-//Expressions always produce values statemens don't ahve to produce values
+//Expressions always produce values, statements don't have to produce values
 
-// 5+4 or aaage = true are expressions but
+// 5+4 or age = true; are expressions but
 // if(age >21){
 //    console.log("yu can have a drink") is a statement
 // }
 
 // we can use expressions in Template Literals but we can not use statements
 
-
-// Ternary Operator: ternary operator is like an if else stament with only one line of code
+// Ternary Operator: ternary operator is like an if else statement with only one line of code
 
 const newAge = 29;
 
-newAge > 18 ? console.log("I'd like to drink wine 🍷") :
-  console.log("I'd like to drink water 💧");
+newAge > 18
+  ? console.log("I'd like to drink wine 🍷")
+  : console.log("I'd like to drink water 💧");
 
-
-// Because ternary operation is an operation it always prdocues a value
+// Because ternary operation is an operation it always produces a value
 //and that means it is and expression not a statement
-//we can use them to conditionally cdeclare variables
+//we can use them to conditionally declare variables
 
 const drink = newAge >= 18 ? "🍷" : "💧";
 console.log(drink);
 
-// This is the same logicc as above only done in if statements
+// This is the same logic as above only done in if statements
 let drink2;
 if (newAge >= 18) {
   drink2 = "wine 🍷";
 } else {
   drink2 = "water 💧";
-} console.log(drink2);
+}
+console.log(drink2);
 
 // Because ternary operator is an expression we can use them in Template Literals
 

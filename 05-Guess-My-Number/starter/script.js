@@ -10,13 +10,13 @@
 // console.log(document.querySelector(".guess").value;
 
 //we use document.querySelector to select the htm element we want
-//we specify the element we want to select insidee the paranthesis
+//we specify the element we want to select inside the parenthesis
 //we specify them with elements,id's, or with classes
 //document.querySelector is not part of the javascript language
 //it is part of the DOM web API
 //there are many web API out there(something to keep in mind)
 
-//addEventListener method is used for listening to events on the choosen element
+//addEventListener method is used for listening to events on the chosen element
 //it is a special kind of method because it takes a function as its second argument
 //first arguments specifies the type of event we are looking for
 //second argument specifies what should be done once the event is triggered
@@ -26,8 +26,8 @@
 //we store the value of the input field with the class=".guess" in a a variable
 
 
-//we use .textContent method for sleecting the content of an element
-//but for selecting the content of an input fiedl we use .value
+//we use .textContent method for selecting the content of an element
+//but for selecting the content of an input field we use .value
 
 let score = 20;
 let highScore = 0;
