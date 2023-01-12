@@ -604,7 +604,7 @@ document
     //So before this was introduced we would have to select the parent element first then remove the child from there
     //That would look like this
     // message.parentElement.removeChild(message);
-    //This is cumbersome but you'll see this is some code bases
+    //This is cumbersome but you'll see this in some code bases
     //because this was the old way of doing it and many people also don't know about the remove method
     //*BTW this way of moving up and down on the DOM tree is called DOM traversing and there is a whole lecture on that later
   });
@@ -874,7 +874,7 @@ console.log("randomColor", randomColor());
 //?DOM Traversing
 
 //*Going Downwards: child
-//This code selects all the elements with the class hightlight that are the children of the h1 element
+//This code selects all the elements with the class highlight that are the children of the h1 element
 //This works no matter how deep the child elements are inside the h1 element
 //In this case highlight class is the direct children of the h1 element
 //But if they were not it would go dows as deep as necessary into the DOM tree
